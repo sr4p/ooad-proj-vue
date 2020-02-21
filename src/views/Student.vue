@@ -1,6 +1,7 @@
 <template>
   <div>
     <br>
+    <span class="bd-content-title,float-left" ><strong style="font-size: 20px">นิสิต</strong></span>
     <b-button
       variant="success"
       class="float-right"
@@ -150,7 +151,7 @@
         <pre class="m-0">{{ form }}</pre>
       </b-card>
     </b-modal>
-    <b-table striped hover :items="userList" :fields="fields">
+    <b-table class="mt-3" striped hover :items="userList" :fields="fields">
       <template v-slot:cell(operation)="data">
         <!-- <b-button @click="viewUser(data)">View</b-button> -->
         <b-button variant="info" @click="viewUser(data.item)"><b-icon icon="eye" font-scale="1"></b-icon> View</b-button>

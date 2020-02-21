@@ -1,8 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">LOGO</b-navbar-brand>
-
+      <b-navbar-brand href="#"><b-icon icon="image" font-scale="2.5"></b-icon></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -34,7 +33,7 @@
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
-              <strong><b-icon icon="people-fill" font-scale="1"></b-icon> เจ้าหน้าที่</strong>
+              <b style="font-size: 20px"><b-icon icon="people-fill" font-scale="1"></b-icon> เจ้าหน้าที่</b>
             </template>
             <b-dropdown-item href="#">Profile</b-dropdown-item>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>
