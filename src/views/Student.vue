@@ -17,6 +17,17 @@
       v-b-modal.modal-form-user
       >เพิ่มนิสิตแบบอัพโหลด excel</b-button
     >
+    <!-- <template>
+  <b-breadcrumb>
+    <b-breadcrumb-item href="#home">
+      <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+      Home
+    </b-breadcrumb-item>
+    <b-breadcrumb-item href="#foo">Foo</b-breadcrumb-item>
+    <b-breadcrumb-item href="#bar">Bar</b-breadcrumb-item>
+    <b-breadcrumb-item active>Baz</b-breadcrumb-item>
+  </b-breadcrumb>
+</template> -->
     <br>
     <b-modal
       id="modal-form-user"
@@ -155,15 +166,15 @@
       <template v-slot:cell(operation)="data">
         <!-- <b-button @click="viewUser(data)">View</b-button> -->
         <b-button variant="info" @click="viewUser(data.item)"><b-icon icon="eye" font-scale="1"></b-icon> View</b-button>
-  <!-- <b-modal id="modal-form-user" hide-footer>
+  <b-modal id="modal-form-user" hide-footer>
     <template v-slot:modal-title>
       ดูข้อมูลนิสิต
     </template>
     <div class="d-block text-center">
-      <p style="float:left">รหัสนิสิต : {{data.item.id}}</p><br>
+      <p style="float:left">สาขา : {{data.item.major}}</p><br>
     </div>
     <b-button class="mt-3" block @click="$bvModal.hide('modal-form-user')">Close Me</b-button>
-  </b-modal> -->
+  </b-modal>
         &nbsp;
         <b-button variant="warning" @click="editUser(data.item)"><b-icon icon="gear-wide-connected" font-scale="1"></b-icon> Edit</b-button>
         &nbsp;
